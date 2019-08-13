@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>ehelp | payment</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/payment.css">
+		<script src="js/payment.js"></script>
+	</head>
+<body background="">
+<table border='0'width="40%" align="center" bgcolor="#E8E8FA">
+<tr><td>
+<img src="img/Banner-desk.jpg" width="100%"></td></tr>
+	<tr><td bgcolor="#D8BFD8"><p align="center"><font color="" >Cradit Card Details</font></p></td></tr><tr><td>
+<br>
+<form name="paymentform" method="post" action="php/payment.php">
+  <label for="fname">Card number</label>
+  <input type="text" id="cardno" name="cardno" placeholder="Enter your Card number...." maxlength="16">
+   <p align="right"><img src= "img/card.png" width="20%"></p>
+  <label for="lname">Expiration date</label>
+  <input type="text" id="exday" name="exday" placeholder="MM/YY" maxlength="5">
+  <label for="lname">Security code</label>
+  <input type="text" id="scode" name="scode" placeholder="3 or 4 digits" maxlength="4"><br><br>
+   <input type="submit" value="PAY" onclick = "javascript: return validateMyForm();">
+   <input type="Reset" value="Reset">
+</form>
+</td></tr>
+</table>
+</body>
+</html>

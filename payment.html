@@ -10,13 +10,17 @@
 <tr><td>
 <img src="img/Banner-desk.jpg" width="100%"></td></tr>
 	<tr><td bgcolor="#D8BFD8"><p align="center"><font color="" >Cradit Card Details</font></p></td></tr><tr><td>
-<br>
-<form name="paymentform" method="post" action="php/payment.php">
+    <tr><td bgcolor="#f0f8ff"><p align="left"><font color="" ><b>&nbspRegistration charge: $ 2.00<b></font></p></td></tr><tr><td>
+    <br>
+
+    <form name="paymentform" method="post" action="payment.php">
   <label for="fname">Card number</label>
   <input type="text" id="cardno" name="cardno" placeholder="Enter your Card number...." maxlength="16">
    <p align="right"><img src= "img/card.png" width="20%"></p>
-  <label for="lname">Expiration date</label>
-  <input type="text" id="exday" name="exday" placeholder="MM/YY" maxlength="5">
+    <label for="lname">Expiration date</label>
+    <input type="text" id="exyear" name="exyear" placeholder="YYYY" maxlength="4">
+    <label for="lname">Expiration month</label>
+    <input type="text" id="exmonth" name="exmonth" placeholder="MM" maxlength="2">
   <label for="lname">Security code</label>
   <input type="text" id="scode" name="scode" placeholder="3 or 4 digits" maxlength="4"><br><br>
    <input type="submit" value="PAY" onclick = "javascript: return validateMyForm();">
